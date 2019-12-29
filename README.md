@@ -14,7 +14,7 @@ Static pages with some dynamic elements.
 
 > This will be updated once the project is on heroku.
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ancient-springs-06062.herokuapp.com)
 
 
 ## Getting Started
