@@ -27,11 +27,21 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- You need to have Ruby 2.6.0 and Rails 6.0.2 installed on your local machine.
+- In the development mode you need to have sqllite3 installed. Postgresql for production.
+- You also need to have git installed.
+
 ### Setup
+
+- Run `$ git clone https://github.com/rsundar/sample-app.git` in order to clone the repo on your local machine.
 
 ### Install
 
+- Run `$ bundle install --without production` to install all of the gems required for this project.
+
 ### Usage
+
+- Run `$ rails server` to run the application and go to http://127.0.0.1:3000 in your favorite browser to view the running app.
 
 ### Run tests
 
