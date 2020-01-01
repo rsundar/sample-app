@@ -41,13 +41,15 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-- Run `$ rails server` to run the application and go to http://127.0.0.1:3000 in your favorite browser to view the running app.
+- Run `$ rails server -b 0.0.0.0` to run the application and go to http://127.0.0.1:3000 in your favorite browser to view the running app.
 
 ### Run tests
 
+- Run `$ rails test` to run all the tests for the application.
+
 ### Deployment
 
-
+- Deploy on heroku with the ruby pack,
 
 ## Authors
 
