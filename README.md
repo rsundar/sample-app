@@ -51,7 +51,7 @@ To get a local copy up and running follow these simple example steps.
 ### Deployment
 
 - Deploy on heroku with the ruby pack. Run `$ heroku buildpacks:add heroku/ruby`,
-- Add a postgresql pack to your heroku deployment, (hooby dev to just test the app on heroku),
+- Add a postgresql pack to your heroku deployment with `$ heroku addons:create postgresql:hobby-dev`,
 - Run `$ heroku run rails db:migrate`.
 
 ## Authors
