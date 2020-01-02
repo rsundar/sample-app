@@ -29,6 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 - You need to have Ruby 2.6.0 and Rails 6.0.2 installed on your local machine.
 - In the development mode you need to have sqllite3 installed. Postgresql for production.
+- Install Heroku toolbelt for deployment to heroku.
 - You also need to have git installed.
 
 ### Setup
@@ -41,7 +42,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-- Run `$ rails server -b 0.0.0.0` to run the application and go to http://127.0.0.1:3000 in your favorite browser to view the running app.
+- Run `$ rails server -b 0.0.0.0` to run the application and go to http://localhost:3000 in your favorite browser to view the running app.
 
 ### Run tests
 
@@ -50,6 +51,8 @@ To get a local copy up and running follow these simple example steps.
 ### Deployment
 
 - Deploy on heroku with the ruby pack,
+- Add a postgresql pack to your heroku deployment, (hooby dev to just test the app on heroku).
+- Run `$ heroku run rails db:migrate`.
 
 ## Authors
 
@@ -70,9 +73,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- DHH for gifting the world Ruby on Rails,
+- Michael Hartl for his excellent tutorial on the same,
 
 ## 📝 License
 
