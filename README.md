@@ -54,6 +54,11 @@ To get a local copy up and running follow these simple example steps.
 - Add a postgresql pack to your heroku deployment with `$ heroku addons:create postgresql:hobby-dev`,
 - Run `$ heroku run rails db:migrate`.
 
+#### Issues with Deployment
+
+- You may have problems with webpacker, it would be far better to run `$ rails assets:precompile` locally before pushing to heroku.
+
+
 ## Authors
 
 👤 **Rohan Sundar**
