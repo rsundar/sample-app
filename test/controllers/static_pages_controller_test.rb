@@ -30,7 +30,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get to new_page" do
-    get new_apge_path
+    get new_page_path
     assert_response :success
   end
 end
