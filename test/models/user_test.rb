@@ -14,9 +14,17 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
 
-  test "user's email should be valid" do
+  test "user's email should not be empty" do
     @user.email = "      "
     assert_not @user.valid?
+  end
+
+  test "user must enter a valid email address" do
+    valid_address = %w[USER@foo.com THE_US-ER@foo.bar.org first.last@foo.jp]
+    valid_address.each do |va|
+      @user.email = va
+      assert @user.valid?, "#{va.inspect} should be a valid address"
+    end
   end
 
   test "user names are not too long" do
