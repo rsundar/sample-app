@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new(name: "Someone", email:"someone@example.com", password:"foobar", password_confirmation:"foobar")
+    @user = User.new(name: "Someone", email:"someone@example.com", password:"foobar123", password_confirmation:"foobar123")
   end
 
   test "should be valid user" do
@@ -47,6 +47,16 @@ class UserTest < ActiveSupport::TestCase
 
   test "user emails are not too long" do
     @user.email = "a"*244+"@"+"example.com"
+    assert_not @user.valid?
+  end
+
+  test "user's password must not be blank" do
+    @user.password = @user.password_confirmation = " "*6
+    assert_not @user.valid?
+  end
+
+  test "user's password should be at least 8 characters long" do
+    @user.password = @user.password_confirmation = "A" * 7
     assert_not @user.valid?
   end
 end
