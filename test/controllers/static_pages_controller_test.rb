@@ -29,8 +29,8 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Contact | #{@base_title}"
   end
 
-  test "should get to new_page" do
-    get new_page_path
-    assert_response :success
-  end
+  # test "should get to new_page" do
+  #   get new_page_path
+  #   assert_response :success
+  # end
 end
