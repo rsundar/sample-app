@@ -6,7 +6,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   # end
 
   def setup
-    @user = users(:irritating)
+    @user = users(:rigi)
   end
 
   test "login with invalid information" do
